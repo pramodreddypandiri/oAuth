@@ -19,5 +19,6 @@ public class SecurityConfig {
         http.csrf(AbstractHttpConfigurer::disable).authorizeHttpRequests(authorizeRequests -> authorizeRequests.anyRequest().authenticated().anyRequest())
                 .formLogin(Customizer.withDefaults());
         return http.build();
+        //check
     }
 }
